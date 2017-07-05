@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Flexbox.Droid", "Flexbox\Naxam.Flexbox.Droid\Naxam.Flexbox.Droid.csproj", "{402FB4D3-71DF-4EBA-904F-BCD4C895BB19}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{130869BD-ACBF-4ADC-881A-8D61B5E64890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexboxQs", "Flexbox\FlexboxQs\FlexboxQs.csproj", "{81DC7914-0065-4B23-ADB6-A7AA45172F26}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish-assets", "publish-assets", "{82A7EDD0-78F9-4B70-A6EA-4CE9B483A6B8}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		package.nuspec = package.nuspec
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Flexbox.Droid", "Naxam.Flexbox.Droid\Naxam.Flexbox.Droid.csproj", "{402FB4D3-71DF-4EBA-904F-BCD4C895BB19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexboxQs", "demo\FlexboxQs\FlexboxQs.csproj", "{81DC7914-0065-4B23-ADB6-A7AA45172F26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
