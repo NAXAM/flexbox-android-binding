@@ -3,28 +3,36 @@ using Android.App;
 using Android.Content;
 using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Com.Google.Android.Flexbox;
+using FlexboxQs.CatGallery;
 
 namespace FlexboxQs
 {
-    [Activity(Label = "FlexboxQs", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
-    public class MainActivity : Activity
+    [Activity(Label = "FlexboxQs", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme = "@style/AppTheme.NoActionBar")]
+    public class MainActivity : AppCompatActivity
     {
-        int count = 1;
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.activity_main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            var lstCats = FindViewById<RecyclerView>(Resource.Id.recyclerview);
+            var layout = new FlexboxLayoutManager(this);
+            layout.FlexWrap = FlexWrap.Wrap;
+            layout.FlexDirection = FlexDirection.Row;
+            layout.AlignItems = AlignItems.Stretch;
+            var adapter = new CatAdapter(this);
+
+            lstCats.SetLayoutManager(layout);
+            lstCats.SetAdapter(adapter);
         }
     }
 }
