@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{130869BD-ACBF-4ADC-881A-8D61B5E64890}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish-assets", "publish-assets", "{82A7EDD0-78F9-4B70-A6EA-4CE9B483A6B8}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
@@ -13,10 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish-assets", "publish-a
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Flexbox.Droid", "Naxam.Flexbox.Droid\Naxam.Flexbox.Droid.csproj", "{402FB4D3-71DF-4EBA-904F-BCD4C895BB19}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexboxQs", "demo\FlexboxQs\FlexboxQs.csproj", "{81DC7914-0065-4B23-ADB6-A7AA45172F26}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexboxQsPlayground", "demo\FlexboxQsPlayground\FlexboxQsPlayground.csproj", "{B9B132E7-EC8E-41DA-9D7D-10EBA7C6B61D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,22 +22,11 @@ Global
 		{402FB4D3-71DF-4EBA-904F-BCD4C895BB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{402FB4D3-71DF-4EBA-904F-BCD4C895BB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{402FB4D3-71DF-4EBA-904F-BCD4C895BB19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{B9B132E7-EC8E-41DA-9D7D-10EBA7C6B61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9B132E7-EC8E-41DA-9D7D-10EBA7C6B61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9B132E7-EC8E-41DA-9D7D-10EBA7C6B61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9B132E7-EC8E-41DA-9D7D-10EBA7C6B61D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{81DC7914-0065-4B23-ADB6-A7AA45172F26} = {130869BD-ACBF-4ADC-881A-8D61B5E64890}
-		{B9B132E7-EC8E-41DA-9D7D-10EBA7C6B61D} = {130869BD-ACBF-4ADC-881A-8D61B5E64890}
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC33C537-6ECF-4A8E-A378-DC7079A5466C}
 	EndGlobalSection
 EndGlobal

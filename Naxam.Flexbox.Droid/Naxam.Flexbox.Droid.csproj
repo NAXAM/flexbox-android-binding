@@ -62,7 +62,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\flexbox-0.3.0.aar" />
+    <LibraryProjectZip Include="Jars\flexbox-0.2.5.aar" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
