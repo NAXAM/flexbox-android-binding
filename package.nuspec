@@ -3,20 +3,21 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Flexbox.Droid</id>
-        <version>0.3.0</version>
+        <version>0.3.1</version>
         <description>Xamarin Binding Library - Google::Flexbox</description>
         <authors>NAXAM</authors>
         <owners>NAXAM CO.,LTD</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Google::Flexbox</title>
-        <releaseNotes>Google::Flexbox v0.3.0</releaseNotes>
+        <releaseNotes>Google::Flexbox v0.3.1</releaseNotes>
         <summary>Xamarin Binding Library - Google::Flexbox</summary>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/NAXAM/flexbox-android-binding</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
-        <tags>Xamarin.Android, flexbox</tags>
+        <tags>Xamarin.Android, flexbox,flexlayout,layout,flex layout</tags>
         <dependencies>
-            <!--<dependency id="Xamarin.GooglePlayServices.Maps" version="42.1021.1" />-->
+           <dependency id="Xamarin.Android.Support.Compat" version="25.3.1" />
+		   <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="25.3.1" />
         </dependencies>
     </metadata>
     <!-- Optional 'files' node -->
